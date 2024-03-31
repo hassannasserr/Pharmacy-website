@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Phrmasico</title>
+</head>
+<body>
+    <header class="header">
+        <div class="flex">
+            <h1 class="logoany">Phrmasico</h1>
+            <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="order.html">orders</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+            </nav>
+            <div class="icons">
+                <i class="bx bxs-user" id="user-btn"></i>
+                <a href="wishlist.html" class="card-btn"><i class="bx bx-heart"></i><sub>0</sub></a>
+                <a href="cart.html" class="card-btn"><i class="bx bx-cart-download"></i><sub>0</sub></a>
+                <i class="bx bx-list-plus" id="menu-btn" style="font-size: 2rem;"></i>
+            </div>
+            <div class="user-box">
+                <p>Username :Hassan Nasser Mohamed</p>
+                <p>Email :Elkashefhassa1@gmail.com</p>
+                <a href="login.html" class="btn">login</a>
+                <a href="signup.html" class="btn">signup</a>
+                <form action="">
+                    <button type="submit" name="logout" class="logout-btn">log out</button>
+                </form>
+            </div>
+        </div>
+        <div class="menu-dropdown">
+            <button class="dropbtn">Categories</button>
+            <div class="menu-content">
+                <a href="#medical">Medications</a>
+                <a href="#skincare">Skin Care</a>
+                <a href="#baby">Mom & Baby</a>
+                <a href="#hair">Hair Care</a>
+            </div>
+        </div>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-----------------------------------------------------------section1------------------------------------------------------------------------------->
+        <div class="all">
+        <section id="medical">
+            <div class="products">
+                <div class="row" onclick="showDescription(this)">
+                    <img src="184147_123455.jpg" alt="">
+                    <div class="description">
+                        <p>Johnson Baby Oil Sleep Time helps your baby fall asleep faster and for longer. It nourishes and moisturises your baby's skin as well.</p>
+                        <div class="add-to-cart">
+                            <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h4>Sediproct Cream 20Gm</h4>
+                        <p>EGP27.00</p>
+                    </div>
+                </div>
+            
+            <div class="row" onclick="showDescription(this)">
+                    <img src="155439_102056.jpg" alt="">
+                    <div class="description">
+                        <p>Description: Visceralgine Tablet is a medication used to treat visceral spasms and other conditions.</p>
+                        <div class="add-to-cart">
+                            <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                <div class="price">
+                    <h4>Visceralgine Syrup 120Ml</h4>
+                    <p>EGP19.00</p>
+                </div>
+            </div>
+            <div class="row" onclick="showDescription(this)">
+                <img src="141930_102880.jpg" alt="">
+                <div class="description">
+                    <p>Suppository for adults used as a quick remedy to get rid of constipation.</p>
+                    <div class="add-to-cart">
+                        <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                        <input type="number" value="1" min="1" class="quantity">
+                        <button onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+                
+            <div class="price">
+                <h4>Glycerin Adult (Gsk) 10 Suppositories</h4>
+                <p>EGP12.00</p>
+            </div>
+        </div>
+        <div class="row" onclick="showDescription(this)">
+            <img src="085600_123336.jpg" alt="">
+            <div class="description">
+                <p>Description: Drop containing Poly Frisch on a specific part of the material sodium hyaluronate extreme purity.</p>
+                <div class="add-to-cart">
+                    <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                    <input type="number" value="1" min="1" class="quantity">
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        
+        <div class="price">
+            <h4>Polyfresh 0.2% Eye Drops 20 Unidoses</h4>
+            <p>EGP75.00</p>
+        </div>
+    </div>
+    <div class="row" onclick="showDescription(this)">
+        <img src="151850_121924.jpg" alt="">
+        <div class="description">
+            <p>Fortified with minerals and vitamins that helps support normal growth and development.</p>
+            <div class="add-to-cart">
+                <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                <input type="number" value="1" min="1" class="quantity">
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    <div class="price">
+        <h4>Panadol Joint 24/Tab</h4>
+        <p>EGP55.00</p>
+    </div>
+</section>
+<!-------------------------------------------------------------section 2------------------------------------------------------------------->
+        <section id="baby">
+            <div class="products">
+
+            <div class="row" onclick="showDescription(this)">
+                    <img src="090933_452085.jpg" alt="">
+                    <div class="description">
+                        <p>Johnson Baby Oil Sleep Time helps your baby fall asleep faster and for longer. It nourishes and moisturises your baby's skin as well.</p>
+                        <div class="add-to-cart">
+                            <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                <div class="price">
+                    <h4>Johnson Baby Oil Bed/Sleep Time 75Ml</h4>
+                    <p>EGP43.00</p>
+                </div>
+            </div>
+            <div class="row" onclick="showDescription(this)">
+                    <img src="121157_448810.jpg" alt="">
+                    <div class="description">
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="add-to-cart">
+                            <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                <div class="price">
+                    <h4>Fine Baby D.Lock #4 Large (7-14Kg) 58P</h4>
+                    <p>EGP273.76</p>
+                </div>
+            </div>
+            <div class="row" onclick="showDescription(this)">
+                <img src="094103_452242.jpg" alt="">
+                <div class="description">
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="add-to-cart">
+                        <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                        <input type="number" value="1" min="1" class="quantity">
+                        <button onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            
+            <div class="price">
+                <h4>Bubbles Natural Bottle Rose 150Ml</h4>
+                <p>EGP180.00</p>
+            </div>
+        </div>
+        <div class="row" onclick="showDescription(this)">
+            <img src="094204_438537.jpg" alt="">
+            <div class="description">
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="add-to-cart">
+                    <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                    <input type="number" value="1" min="1" class="quantity">
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        
+        <div class="price">
+            <h4>Canpol Rattle With Soft Teether - 13/107</h4>
+            <p>EGP110.00</p>
+        </div>
+    </div>
+    <div class="row" onclick="showDescription(this)">
+        <img src="094244_437153.jpg" alt="">
+        <div class="description">
+            <p>Fortified with minerals and vitamins that helps support normal growth and development.</p>
+            <div class="add-to-cart">
+                <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                <input type="number" value="1" min="1" class="quantity">
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    <div class="price">
+        <h4>Cerelac Honey & Wheat With Milk 125Gm</h4>
+        <p>EGP55.00</p>
+    </div>
+</div>
+</section>
+<!----------------------------------------------------------------section3--------------------------------------------------------->
+        <section id="skincare">
+            <div class="products">
+
+            <div class="row" onclick="showDescription(this)">
+                    <img src="114755_457963.jpg" alt="">
+                    <div class="description">
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="add-to-cart">
+                            <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                <div class="price">
+                    <h4>GARNIER FAST BRIGHT VIT C AMP 6X1.5ML</h4>
+                    <p>EGP540.00</p>
+                </div>
+            </div>
+
+            <div class="row" onclick="showDescription(this)">
+                    <img src="162653_454314.jpg" alt="">
+                    <div class="description">
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="add-to-cart">
+                            <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                <div class="price">
+                    <h4>Mood Hand Wash Vienna 500Ml</h4>
+                    <p>EGP59.00</p>
+                </div>
+            </div>
+
+            <div class="row" onclick="showDescription(this)">
+                    <img src="160234_455599.jpg" alt="">
+                    <div class="description">
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="add-to-cart">
+                            <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                
+                <div class="price">
+                    <h4>La Roche Effaclar Ultra Concentrated Serum 30Ml</h4>
+                    <p>EGP1,298.93</p>
+                </div>
+            </div>
+            <div class="row" onclick="showDescription(this)">
+                <img src="004345_431563.jpg" alt="">
+                <div class="description">
+                    <p>Luna Emollient Cream For Hand & Body with Vitamin E that moisturizes your skin and gives you a fresh feel.</p>
+                    <div class="add-to-cart">
+                        <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                        <input type="number" value="1" min="1" class="quantity">
+                        <button onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+        
+            <div class="price">
+                <h4>Luna Emollient Hand & Body Cocoa Butter Cream 75Gm</h4>
+                <p>EGP269.00</p>
+            </div>
+        </div>
+    <div class="row" onclick="showDescription(this)">
+        <img src="155443_453459.jpg" alt="">
+        <div class="description">
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="add-to-cart">
+                <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                <input type="number" value="1" min="1" class="quantity">
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        
+    <div class="price">
+        <h4>Loreal Hyaluron Expert Eye Cream 15Ml</h4>
+        <p>EGP269.00</p>
+    </div>
+</div>
+</section>
+
+<!-------------------------------------------------------------------------sectin4------------------------------------------------------------------------------->
+        <section id="hair">
+            <div class="products">
+            <div class="row" onclick="showDescription(this)">
+                    <img src="090800_457728.jpg" alt="">
+                    <div class="description">
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="add-to-cart">
+                            <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                <div class="price">
+                    <h4>Dove Shampoo Intensive Repair 180Ml - 6Le</h4>
+                    <p>EGP74.00</p>
+                </div>
+            </div>
+
+            <div class="row" onclick="showDescription(this)">
+                    <img src="170123_437999.jpg" alt="">
+                    <div class="description">
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="add-to-cart">
+                            <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                
+                <div class="price">
+                    <h4>Trichup Hair Oil Fall Control 100Ml</h4>
+                    <p>EGP80.00</p>
+                </div>
+            </div>
+
+            <div class="row" onclick="showDescription(this)">
+                    <img src="093834_452479.jpg" alt="">
+                    <div class="description">
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="add-to-cart">
+                            <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                <div class="price">
+                    <h4>Babe Anti Hair Loss Lotion 125Ml</h4>
+                    <p>EGP769.00</p>
+                </div>
+            </div>
+            <div class="row" onclick="showDescription(this)">
+                <img src="091130_436222.jpg" alt="">
+                <div class="description">
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="add-to-cart">
+                        <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                        <input type="number" value="1" min="1" class="quantity">
+                        <button onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+                
+            <div class="price">
+                <h4>Loreal Prodigy Ammonia Free Hair Color - 4.15 Frosted Brown</h4>
+                <p>EGP289.00</p>
+            </div>
+        </div>
+        <div class="row" onclick="showDescription(this)">
+            <img src="095317_421925.jpg" alt="">
+            <div class="description">
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="add-to-cart">
+                    <i class="bx bx-heart heart-icon" onclick="addToFavorites(this)"></i>
+                    <input type="number" value="1" min="1" class="quantity">
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        
+        <div class="price">
+            <h4>Herbal Essences Bee Strong Conditioner With Honey Essences 360Ml</h4>
+            <p>EGP119.00</p>
+        </div>
+    </div>
+        </section>
+        </div>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="about-us">
+                    <p>&copy; 2024 Phrmasico. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+    <script src="scrypt.js"></script><!--20-->
+
+</body>
+</html>
